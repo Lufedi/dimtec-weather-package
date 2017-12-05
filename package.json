@@ -1,0 +1,31 @@
+{
+  "name": "dimtec-weather-package",
+  "version": "1.0.0",
+  "description": "This module helps you to know the weather in every city and geographical position on the earth",
+  "main": "weather-query.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lufedi/dimtec-weather-package.git"
+  },
+  "keywords": [
+    "weather",
+    "query",
+    "tool"
+  ],
+  "author": "Luis Felipe Diaz Chica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lufedi/dimtec-weather-package/issues"
+  },
+  "homepage": "https://github.com/Lufedi/dimtec-weather-package#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
