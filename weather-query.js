@@ -41,11 +41,13 @@
     };
 
 
-    exports.weather = function (callback) {
-
+    exports.getWeather = function (callback) {
         WeatherService.getWeather(configuration, callback);
     };
 
+    exports.getTemperature = function(callback){
+        WeatherService.getTemperature(configuration, callback);
+    }
 
 
 

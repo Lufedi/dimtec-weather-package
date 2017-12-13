@@ -30,7 +30,28 @@ describe('weatherpackage', function () {
             assert.equal(lat, 25);
             assert.equal(lon, 45);
         });
-    })
+    });
+
+
+    describe('Get data', function(){
+        it('Should get data by name', function(done){
+            weatherQuery.setApiKey(APIKEY);
+            weatherQuery.setCityName('miami');
+            var weather = weatherQuery.getWeather(function(data, error){
+                chai.assert.isNull(error);
+                done();
+            });
+        });
+
+        it('Should get temperature by name', function(done){
+          weatherQuery.setApiKey(APIKEY);
+          weatherQuery.setCityName('miami');
+          weatherQuery.getTemperature(function (data, error) {
+              expect(data).to.be.a('number');
+              done();
+          })
+        });
+    });
 });
 
 
