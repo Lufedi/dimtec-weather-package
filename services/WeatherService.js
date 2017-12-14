@@ -9,16 +9,18 @@ var URL_PATH  = 'http://api.openweathermap.org/data/2.5/weather?';
 
 function buildQuery(configuration){
 
-
+    
     var query = URL_PATH;
-    if(configuration.city){
-        query+= 'q='+ configuration.city;
-    }else if(configuration.coordinates){
-        query+= 'lat=' + coordinates.latitude + '&lon=' + coordinates.longitude;
+    var parameters = configuration.parameters;
+    if(parameters.city){
+        query+= 'q='+ parameters.city;
+    }else if(parameters.coordinates){
+        query+= 'lat=' + parameters.coordinates.lat + '&lon=' + parameters.coordinates.lon;
     }
     query+= '&appid=' + configuration.APIKEY;
-
+    
     return  query;
+
 }
 
 

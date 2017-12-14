@@ -38,6 +38,7 @@ describe('weatherpackage', function () {
             weatherQuery.setApiKey(APIKEY);
             weatherQuery.setCityName('miami');
             var weather = weatherQuery.getWeather(function(data, error){
+                expect(data).to.not.be.null;
                 chai.assert.isNull(error);
                 done();
             });
@@ -47,6 +48,7 @@ describe('weatherpackage', function () {
           weatherQuery.setApiKey(APIKEY);
           weatherQuery.setCityName('miami');
           weatherQuery.getTemperature(function (data, error) {
+              expect(data).to.not.be.null;
               expect(data).to.be.a('number');
               done();
           });
@@ -55,7 +57,8 @@ describe('weatherpackage', function () {
             weatherQuery.setApiKey(APIKEY);
             weatherQuery.setCoordinates({lat: 25.77, lon: -80.19});
             weatherQuery.getWeather(function(data, error){
-                expect(data).to.be.a('number');
+                expect(data).to.not.be.null;
+                chai.assert.isNull(error);
                 done();
             });
         });
