@@ -49,7 +49,15 @@ describe('weatherpackage', function () {
           weatherQuery.getTemperature(function (data, error) {
               expect(data).to.be.a('number');
               done();
-          })
+          });
+        });
+        it('Should get temperature by coordinates', function(done){
+            weatherQuery.setApiKey(APIKEY);
+            weatherQuery.setCoordinates({lat: 25.77, lon: -80.19});
+            weatherQuery.getWeather(function(data, error){
+                expect(data).to.be.a('number');
+                done();
+            });
         });
     });
 });

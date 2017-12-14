@@ -8,6 +8,8 @@ var URL_PATH  = 'http://api.openweathermap.org/data/2.5/weather?';
 
 
 function buildQuery(configuration){
+
+
     var query = URL_PATH;
     if(configuration.city){
         query+= 'q='+ configuration.city;
@@ -15,8 +17,10 @@ function buildQuery(configuration){
         query+= 'lat=' + coordinates.latitude + '&lon=' + coordinates.longitude;
     }
     query+= '&appid=' + configuration.APIKEY;
+
     return  query;
 }
+
 
 
 
@@ -27,11 +31,9 @@ exports.getWeather = function (configuration, callback) {
     axios
         .get(query)
         .then(function (response) {
-
             return callback(response, null);
         })
         .catch(function (error) {
-
             return callback(null, error);
         });
 };

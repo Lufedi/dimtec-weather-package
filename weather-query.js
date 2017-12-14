@@ -12,7 +12,6 @@
     var  WeatherService = require('./services/WeatherService');
 
     var configuration = {
-        city: 'Miami',
         APIKEY: null,
         format: 'json',
         parameters: null
