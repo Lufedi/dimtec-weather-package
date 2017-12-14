@@ -1,0 +1,19 @@
+¨Desea terminar el trabajo por lotes (S/N)? ¨Desea terminar el trabajo por lotes (S/N)? 
+
+> dimtec-weather-package@1.0.0 test C:\Users\desarrollo\Documents\Felipe\Proyectos\dimtec\dimtec-weather-package
+> mocha
+
+
+
+  weatherpackage
+    Configuration
+      âˆš should set the APIKEY
+      âˆš should set the city name to query parameters
+      âˆš should set the coordinates to query parameters
+    Get data
+      âˆš Should get data by name
+
+
+  4 passing (110ms)
+
+¨Desea terminar el trabajo por lotes (S/N)? ¨Desea terminar el trabajo por lotes (S/N)? ¨Desea terminar el trabajo por lotes (S/N)? ¨Desea terminar el trabajo por lotes (S/N)? ¨Desea terminar el trabajo por lotes (S/N)? 

@@ -30,6 +30,14 @@ describe('weatherpackage', function () {
             assert.equal(lat, 25);
             assert.equal(lon, 45);
         });
+
+        it('Should set language parameter', function(){
+            weatherQuery.setLanguage('es');
+            var language = weatherQuery.getLanguage();
+            assert.equal(language, 'es');
+        });
+      
+
     });
 
 
@@ -62,6 +70,18 @@ describe('weatherpackage', function () {
                 done();
             });
         });
+
+         it('Should get weather in spanish', function(done){
+            weatherQuery.setApiKey(APIKEY);
+            weatherQuery.setLanguage('es');
+            weatherQuery.setCoordinates({lat: 25.77, lon: -80.19});
+            weatherQuery.getWeather(function(data, error){
+                expect(data).to.not.be.null;
+                chai.assert.isNull(error);
+                done();
+            });
+        });
+
     });
 });
 

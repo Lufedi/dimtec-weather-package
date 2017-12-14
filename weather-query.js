@@ -8,7 +8,6 @@
 
 
 
-
     var  WeatherService = require('./services/WeatherService');
 
     var configuration = {
@@ -31,7 +30,7 @@
 
     exports.setCityName = function(cityName){
         configuration.parameters = null;
-        configuration.parameters = {city: cityName};
+        configuration.parameters = {city: encodeURIComponent(cityName)};
     };
 
     exports.setCoordinates = function (coordinates) {
@@ -46,7 +45,19 @@
 
     exports.getTemperature = function(callback){
         WeatherService.getTemperature(configuration, callback);
-    }
+    };
+
+
+    exports.setLanguage = function(language){
+        if(WeatherService.setLanguage(language)){
+            configuration.language = language;    
+        }
+    };
+
+
+    exports.getLanguage = function(language){
+        return configuration.language;
+    };
 
 
 
