@@ -6,7 +6,8 @@ Nodejs development enviroment
 
 # Versions 
 
-1.0.0 first verion of this package
+1.0.0 first version of this package
+1.0.1 Fixed response data to only response.body data
 
 # Installing
 
