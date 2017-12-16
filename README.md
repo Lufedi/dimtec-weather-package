@@ -25,8 +25,7 @@ Or if you prefer, you can download the package from this repository and install 
 
 After adding the package to your project, import it (as shown below) in your files and enjoy it!
 
-```
-
+```javascript
 
 //import weather query package
 var weatherQuery = require('dimtec-weather');
