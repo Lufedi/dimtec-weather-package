@@ -10,7 +10,7 @@ Nodejs development enviroment
 
 # Installing
 
-You only have to donwload the package using npm, please chack for package updates.
+You only have to install the package using npm.
 ```
 //Install and save in local project
 npm install --save dimtec-weather
@@ -18,23 +18,24 @@ npm install --save dimtec-weather
 //Install in global modules
 npm install -g dimtec-weather
 ```
-Or if you prefer, you can download the package from this rep and install it using local configuration
+Or if you prefer, you can download the package from this repository and install it using local configuration
 
 
 # Using The package
 
 After adding the package to your project, import it (as shown below) in your files and enjoy it!
 
-```//import weather query package
+```
+//import weather query package
 var weatherQuery = require('weather-query');
 
-//Set you language
+//Set your language
 weatherQuery.setLanguage('es');
 
-//Set you API KEY
+//Set your API KEY
 weatherQuery.setApiKey(OPEN_WEATHER_MAP_API_KEY);
 
-//Set you city
+//Set your city
 weatherQuery.setCityName('miami');
 
 //OR
@@ -69,4 +70,5 @@ npm test
 Luis Felipe Díaz Chica - 
 
 
+The project is  open to contributions
 
