@@ -1,6 +1,6 @@
 {
   "name": "dimtec-weather",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package helps you to know the weather in every city and geographical position on the earth",
   "main": "weather-query.js",
   "scripts": {

@@ -53,7 +53,7 @@ exports.getWeather = function (configuration, callback) {
     axios
         .get(query)
         .then(function (response) {
-            return callback(response, null);
+            return callback(response.data, null);
         })
         .catch(function (error) {
             return callback(null, error);

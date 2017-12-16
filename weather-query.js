@@ -55,7 +55,7 @@
 
     /**
      * Sets the coordinates in the configuration Object
-     * @param coordinates
+     * @param {Object} coordinates object with two attributes, lat and lon
      */
     exports.setCoordinates = function (coordinates) {
         configuration.parameters = null;
