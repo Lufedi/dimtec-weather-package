@@ -1,7 +1,7 @@
 {
-  "name": "dimtec-weather-package",
+  "name": "dimtec-weather",
   "version": "1.0.0",
-  "description": "This module helps you to know the weather in every city and geographical position on the earth",
+  "description": "This package helps you to know the weather in every city and geographical position on the earth",
   "main": "weather-query.js",
   "scripts": {
     "test": "mocha"
@@ -13,7 +13,8 @@
   "keywords": [
     "weather",
     "query",
-    "tool"
+    "tool",
+    "dimtec"
   ],
   "author": "Luis Felipe Diaz Chica",
   "license": "ISC",
