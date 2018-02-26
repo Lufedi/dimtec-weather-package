@@ -1,5 +1,6 @@
-# dimtec-weather-package
-This module helps you to ask for the weather in some cities using some basic parameters like city name o geographical position.
+# weather-package
+This module helps you to ask for weather information in some cities using basic parameters like city name o geographical position.
+The data is provided by openweather API
 
 # Prerequisites
 Nodejs development enviroment
